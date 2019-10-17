@@ -26,13 +26,13 @@ public class UserController {
 	//@PostConstruct
 	public void init(){
 	userService.addUser(new User("anu", "anu70037@gmail.com", "anu123", "admin", true));
-		userService.addUser(new User("sravs", "sravs@gmail.com", "sravs123", "manager", true));
-		userService.addUser(new User("ajay", "ajay123@gmail.com", "ajay", "user", true));
+		userService.addUser(new User("nandu", "nandu@gmail.com", "nandu123", "manager", true));
+		userService.addUser(new User("amani", "amani123@gmail.com", "amani", "user", true));
 }
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home() {
 		return "redirect:login";
-	}
+	}*/
 	
 	@RequestMapping(value = "login")
 	public String loginGet(HttpServletRequest req,ModelMap map) {

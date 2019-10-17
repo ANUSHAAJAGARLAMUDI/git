@@ -22,7 +22,10 @@ public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
 
-	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String home() {
+		return "redirect:login";
+	}
 
 	@RequestMapping(value = "allcustomer", method = RequestMethod.GET)
 	public String getCustomers(ModelMap map) {
